@@ -8,6 +8,8 @@ app.config["MONGO_DBNAME"] = "students_db"
 mongo = PyMongo(app, config_prefix='MONGO')
 APP_URL = "http://127.0.0.1:5000"
 
+#students_db database , student collection,
+
 class Student(Resource):
     def get(self, registration=None, department=None):
         data = []
